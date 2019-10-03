@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:id="@+id/cvmovie"
+    app:cardCornerRadius="25dp"
+    android:padding="10dp"
+    android:layout_margin="15dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_conversion_absoluteHeight="250dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:id="@+id/title_movie"
+            app:layout_constraintBottom_toTopOf="@+id/trainingName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_conversion_absoluteWidth="28dp" />
+
+        <TextView
+            android:id="@+id/trainingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ini judul"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_movie"
+            tools:layout_conversion_wrapHeight="63"
+            tools:layout_conversion_wrapWidth="0"
+            tools:layout_conversion_absoluteHeight="24dp"
+            tools:layout_editor_absoluteY="18dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_conversion_absoluteWidth="0dp" />
+
+        <ImageView
+            android:id="@+id/trainingImage"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/trainingName"
+            tools:layout_conversion_wrapHeight="394dp"
+            tools:layout_conversion_wrapWidth="394"
+            tools:layout_conversion_absoluteHeight="150dp"
+            tools:layout_editor_absoluteY="42dp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_conversion_absoluteWidth="150dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trainingImage"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_editor_absoluteY="200dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_conversion_absoluteWidth="73dp" />
+
+        <TextView
+            android:id="@+id/trainingShortDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="short_description"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            tools:layout_conversion_wrapHeight="56"
+            tools:layout_conversion_wrapWidth="306"
+            tools:layout_conversion_absoluteHeight="21dp"
+            tools:layout_editor_absoluteY="227dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_conversion_absoluteWidth="120dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
